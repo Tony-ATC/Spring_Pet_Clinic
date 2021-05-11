@@ -20,13 +20,13 @@
     <description>Spring Pet Clinic Project (Guru)</description>
     <properties>
         <java.version>11</java.version>
+        <start-class>udemy.springframework5guru.springpetclinic.SpringPetClinicApplication</start-class>
     </properties>
     <dependencies>
 
     </dependencies>
 
     <build>
-        <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -41,7 +41,6 @@
                 </configuration>
             </plugin>
         </plugins>
-        </pluginManagement>
     </build>
 
 </project>
