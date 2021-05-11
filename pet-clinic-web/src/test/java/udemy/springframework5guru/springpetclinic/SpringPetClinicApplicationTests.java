@@ -1,10 +1,9 @@
-package springpetclinic;
+package udemy.springframework5guru.springpetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import udemy.springframework5guru.springpetclinic.SpringPetClinicApplication;
 
-@SpringBootTest(classes = {SpringPetClinicApplication.class})
+@SpringBootTest
 class SpringPetClinicApplicationTests {
 
     @Test
