@@ -2,10 +2,10 @@ package udemy.springframework5guru.springpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet extends BaseEntity {
+public class Pet extends BaseEntity{
     private PetType petType;
     private Owner owner;
-    private LocalDate birtDate;
+    private LocalDate birthDate;
 
     public PetType getPetType() {
         return petType;
@@ -23,11 +23,11 @@ public class Pet extends BaseEntity {
         this.owner = owner;
     }
 
-    public LocalDate getBirtDate() {
-        return birtDate;
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirtDate(LocalDate birtDate) {
-        this.birtDate = birtDate;
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
     }
 }
