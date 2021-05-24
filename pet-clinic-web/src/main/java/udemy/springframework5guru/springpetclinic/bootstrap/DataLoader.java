@@ -6,8 +6,6 @@ import udemy.springframework5guru.springpetclinic.model.Owner;
 import udemy.springframework5guru.springpetclinic.model.Vet;
 import udemy.springframework5guru.springpetclinic.services.OwnerService;
 import udemy.springframework5guru.springpetclinic.services.VetService;
-import udemy.springframework5guru.springpetclinic.services.map.OwnerServiceMap;
-import udemy.springframework5guru.springpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

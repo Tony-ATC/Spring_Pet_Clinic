@@ -1,10 +1,12 @@
 package udemy.springframework5guru.springpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import udemy.springframework5guru.springpetclinic.model.Owner;
 import udemy.springframework5guru.springpetclinic.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
