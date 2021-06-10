@@ -1,5 +1,6 @@
 package udemy.springframework5guru.springpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import udemy.springframework5guru.springpetclinic.model.Visit;
 import udemy.springframework5guru.springpetclinic.services.VisitService;
@@ -7,6 +8,7 @@ import udemy.springframework5guru.springpetclinic.services.VisitService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
     @Override
     public Set<Visit> findAll() {
